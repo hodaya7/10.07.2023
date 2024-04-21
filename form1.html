@@ -19,13 +19,13 @@
     <form action="">
         
         <label for="firstname"><b>First name:</b> </label>
-        <input type="text" id="firstname" name="firstname" required/>
+        <input type="text" id="firstname" name="firstname" required placeholder="your first name"/>
         <br /><br />
         <label for="lastname"><b>Last name:</b> &nbsp; </label>
         <input type="text" id="lastname" name="lastname" required/>        
         <br /><br />
         <label for="email"><b>Email:</b> &nbsp; </label>
-        <input type="email" id="email" name="email" required/>        
+        <input type="email" id="email" name="email" required autofocus/>        
         <br /><br />
         <label for="password"><b>Password:</b> &nbsp; </label>
         <input type="password" id="password" name="password" required/>        
@@ -48,7 +48,7 @@
         </select>
         <br /><br />
         <label for="vegan"><b>vegan?</b> &nbsp; </label>
-        <input type="checkbox" id="vegan" name="vegan" value="yes"><br>
+        <input type="checkbox" id="vegan" name="vegan" value="yes" checked><br>
         <label for="animal"><b>favorite animal:</b> &nbsp; </label><br>
           <input type="radio" id="dog" name="animal" value="dog" required="required">
           <label for="dog">dog</label><br>
@@ -57,6 +57,11 @@
           <input type="radio" id="fish" name="animal" value="fish">
           <label for="fish">fish</label>
         <br />
+        <label for="text1">cover letter:</label><br>
+        <textarea id="text1" name="text1"></textarea>
+        <br>
+        <label for="opacity">opacity:</label><br>
+        <input type="range" id="opacity" name="opacity" value="90" disabled><br>
         <!-- <select required>
             <option value="">Please choose</option>
             <option value="ds">Data Structure</option>
