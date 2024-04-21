@@ -1,0 +1,18 @@
+body {
+    /* color: yellow; */
+    background-color: rgb(239, 239, 200);
+}
+table {
+    width: 25%;
+    border: 1px solid black;
+}
+th {
+    border: 2px solid purple;
+}
+td {
+    border: 3px solid pink;
+    text-align: center;
+}
+tr:hover {
+    background-color: greenyellow;
+}
