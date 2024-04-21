@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<!-- לאחר סבמיט זה הערכים שנשלחים -->
+<!-- http://127.0.0.1:5501/form1.html?
+    firstname=hodaya&
+    lastname=rivani&
+    email=hodayabig%40gmail.com&
+    password=123&
+    grade=100&
+    birthdate=2024-04-04&
+    favoritecolor=%23615e8d&
+    favoritefiletype=html&
+    vegan=yes&
+    animal=cat -->
+<body>
+    <form action="">
+        
+        <label for="firstname"><b>First name:</b> </label>
+        <input type="text" id="firstname" name="firstname" required/>
+        <br /><br />
+        <label for="lastname"><b>Last name:</b> &nbsp; </label>
+        <input type="text" id="lastname" name="lastname" required/>        
+        <br /><br />
+        <label for="email"><b>Email:</b> &nbsp; </label>
+        <input type="email" id="email" name="email" required/>        
+        <br /><br />
+        <label for="password"><b>Password:</b> &nbsp; </label>
+        <input type="password" id="password" name="password" required/>        
+        <br /><br />
+        <label for="grade"><b>Grade:</b> &nbsp; </label>
+        <input type="number"  min="1" max="100" id="grade" name="grade" required/>        
+        <br /><br />
+        <label for="birthdate"><b>Birth date:</b> &nbsp; </label>
+        <input type="date" id="birthdate" name="birthdate" required/>        
+        <br /><br />
+        <label for="favoritecolor"><b>Favorite color:</b> &nbsp; </label>
+        <input type="color" id="favoritecolor" name="favoritecolor" required/>        
+        <br /><br />
+        <label for="favoritefiletype"><b>Favorite file type:</b> &nbsp; </label>
+        <select id="favoritefiletype" name="favoritefiletype" required>
+            <option value="">please choose</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+        </select>
+        <br /><br />
+        <label for="vegan"><b>vegan?</b> &nbsp; </label>
+        <input type="checkbox" id="vegan" name="vegan" value="yes"><br>
+        <label for="animal"><b>favorite animal:</b> &nbsp; </label><br>
+          <input type="radio" id="dog" name="animal" value="dog" required="required">
+          <label for="dog">dog</label><br>
+          <input type="radio" id="cat" name="animal" value="cat">
+          <label for="cat">cat</label><br>
+          <input type="radio" id="fish" name="animal" value="fish">
+          <label for="fish">fish</label>
+        <br />
+        <!-- <select required>
+            <option value="">Please choose</option>
+            <option value="ds">Data Structure</option>
+            <option value="algo">Algorithm</option>
+            <option value="os">Operating System</option>
+            <option value="cn">Computer Network</option>
+        </select>
+        <br /><br /> -->
+        <input type="submit" value="submit">
+        <input type="reset" value="reset"> 
+    </form>
+</body>
+</html>
